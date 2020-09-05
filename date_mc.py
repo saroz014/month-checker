@@ -2,7 +2,7 @@
 from datetime import date
 
 
-class DateTime:
+class Date:
     def __init__(self, month_to_check, initial_month, final_month):
         self.month_to_check = month_to_check
         self.initial_month = initial_month
@@ -35,8 +35,8 @@ def main():
     month_to_check = int(input('Enter the month number to check: '))
     initial_month = int(input('Enter the initial month: '))
     final_month = int(input('Enter the final month: '))
-    datetime_mc = DateTime(month_to_check, initial_month, final_month)
-    print(datetime_mc.is_between())
+    date_mc = Date(month_to_check, initial_month, final_month)
+    print(date_mc.is_between())
 
 
 if __name__ == '__main__':
