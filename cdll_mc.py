@@ -68,7 +68,10 @@ def main():
         print(e.message)
         return
     try:
-        print(c.is_between(11, 5, 1))
+        month_to_check = int(input('Enter the month number to check: '))
+        initial_month = int(input('Enter the initial month: '))
+        final_month = int(input('Enter the final month: '))
+        print(c.is_between(month_to_check, initial_month, final_month))
     except NumberNotInRangeError as e:
         print(e.message)
         return
