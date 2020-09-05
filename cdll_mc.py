@@ -9,7 +9,7 @@ class Node:
         self.next = None
 
 
-class CLL:
+class CDLL:
     def __init__(self, start, end):
         if start > end:
             raise StartIsGreaterThanEndError(start, end)
@@ -60,7 +60,7 @@ class CLL:
 
 def main():
     try:
-        c = CLL(1, 12)
+        c = CDLL(1, 12)
     except StartIsGreaterThanEndError as e:
         print(e.message)
         return
